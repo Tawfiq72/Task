@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        form validation with javascript.
+    </title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <form id="registrationForm" onsubmit="return validateform()">
+            <div>
+                <label>E-mail:</label>
+                <input type="text" id="email">
+                <div class="error" id="emailError">email must have @</div>
+            </div>
+
+            <div>
+                <label>Username:</label>
+                <input type="text" id="username">
+                <div class="error" id="usernameError">username must have atleast 6 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+                <div class="error" id="passwordError">Password must be at least 6 characters</div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+          let isValid = true;
+        }
+    </script>
+</body>
+</html>
